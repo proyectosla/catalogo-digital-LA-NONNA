@@ -11,7 +11,7 @@ const products = [
     {
         id: 2,
         nombre: "Arepas Premium",
-        descripcion: "Maíz pilado, mozzarella, mantequilla y toque dulce.",
+        descripcion: "Maíz pilado, queso mozzarella, mantequilla y toque dulce.",
         opciones: [
             { peso: "500g", precio: 8000 }
         ]
@@ -19,7 +19,7 @@ const products = [
     {
         id: 3,
         nombre: "La Arepa Consentida",
-        descripcion: "Maíz pilado blanco, mozzarella y sal.",
+        descripcion: "Maíz pilado blanco, queso mozzarella y sal.",
         opciones: [
             { peso: "500g", precio: 8000 }
         ]

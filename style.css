@@ -11,13 +11,13 @@ body {
     background-color: var(--gris-claro);
 }
 
-header { text-align: center; padding: 15px; background: white; }
-.logo { max-width: 120px; }
+header { text-align: center; padding: 30px; background: white; }
+.logo { max-width: 400px; }
 
 .info-bar {
     background-color: var(--azul-marino);
     color: white;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     font-size: 0.85rem;
 }
