@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arepas La Nonna - Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <img src="logos.png" alt="Logo Arepas La Nonna" class="logo">
+    </header>
+
+
+    <div class="info-bar">
+        <p>🕒 Pedir con anticipación • ❄️ 5 días refrigeradas / 30 días congeladas • 🥣 100% Maíz Pilado Blanco</p>
+    </div>
+
+    <section class="gallery-container">
+        <h2 class="section-title">Una Elegancia Toche</h2>
+        <div class="gallery-grid">
+            <img src="arepa1.png" alt="Arepa" class="thumb" onclick="openZoom(this.src)">
+            <img src="arepa2.png" alt="Arepa" class="thumb" onclick="openZoom(this.src)">
+            <img src="arepa3.png" alt="Arepa" class="thumb" onclick="openZoom(this.src)">
+            <img src="arepa4.png" alt="Arepa" class="thumb" onclick="openZoom(this.src)">
+        </div>
+    </section>
+
+    <main id="catalog-container"></main>
+
+    <div id="image-modal" class="modal-zoom" onclick="closeZoom()">
+        <img id="img-expanded" src="" alt="Zoom">
+    </div>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <h3>Finalizar Pedido</h3>
+            <p id="summary-text"></p>
+            <input type="text" id="user-name" placeholder="Tu Nombre">
+            <input type="tel" id="user-phone" placeholder="Tu Teléfono">
+            <button onclick="sendOrder()" class="btn-capsule">Enviar Pedido</button>
+            <button onclick="closeModal()" class="btn-secondary">Cerrar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-center-container">
+            <div class="footer-row">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Lomitas, Villa del Rosario, Norte de Santander</span>
+            </div>
+            <div class="footer-row">
+                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/la_nona.vr" target="_blank">@la_nona.vr</a>
+            </div>
+        </div>
+        <p class="copy">2025 &copy; Arepas La Nonna</p>
+    </footer>
+
+    <a href="https://wa.me/573025990381" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Escríbenos</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

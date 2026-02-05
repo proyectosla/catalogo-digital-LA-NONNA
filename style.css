@@ -1,0 +1,121 @@
+:root {
+    --azul-marino: #0a1f3d;
+    --dorado: #d4a373;
+    --blanco: #ffffff;
+    --gris-claro: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--gris-claro);
+}
+
+header { text-align: center; padding: 15px; background: white; }
+.logo { max-width: 120px; }
+
+.info-bar {
+    background-color: var(--azul-marino);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* Galería */
+.gallery-container { padding: 20px; text-align: center; }
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.thumb {
+    width: 65px; height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--dorado);
+}
+
+/* Tarjetas */
+#catalog-container { padding: 20px; display: grid; gap: 20px; }
+.card {
+    background: white;
+    border-radius: 15px;
+    border-top: 6px solid var(--dorado);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.selectors { display: flex; gap: 10px; margin: 15px 0; }
+select { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ddd; }
+
+.price-box { margin-bottom: 15px; }
+.unit-price { display: block; font-size: 0.9rem; color: #777; }
+.total-price { display: block; font-size: 1.2rem; font-weight: bold; color: var(--azul-marino); }
+
+.btn-capsule {
+    width: 100%;
+    background: var(--azul-marino);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* FOOTER CENTRADO */
+footer {
+    background-color: var(--azul-marino);
+    color: white;
+    padding: 40px 20px;
+    text-align: center; /* Centra el texto base */
+}
+
+.footer-center-container {
+    display: inline-block; /* Permite que el contenedor se ajuste al contenido y se centre */
+    text-align: left; /* Alinea el texto a la izquierda respecto a los iconos */
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Iconos a la izquierda del texto */
+    margin-bottom: 12px;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
+.footer-row i {
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.footer-row a {
+    color: white;
+    text-decoration: none;
+}
+
+.copy {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* WhatsApp y Modales (igual al anterior) */
+.whatsapp-float {
+    position: fixed; bottom: 20px; right: 20px;
+    background: #25d366; color: white; padding: 12px 20px;
+    border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 8px;
+}
+.modal-zoom {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center;
+}
+#img-expanded { max-width: 90%; }
+.modal {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); z-index: 3000; justify-content: center; align-items: center;
+}
+.modal-content { background: white; padding: 25px; border-radius: 20px; width: 80%; text-align: center; }
+.modal-content input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; }
